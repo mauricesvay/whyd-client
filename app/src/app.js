@@ -9,5 +9,5 @@ var Router = require('./router/Router');
 var AppView = require('./views/App');
 
 var appView = new AppView();
-var router = new Router();
+var router = new Router({appView: appView});
 Backbone.history.start();

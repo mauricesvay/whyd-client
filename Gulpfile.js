@@ -31,6 +31,10 @@ gulp.task('copy', function(){
         .pipe(gulp.dest('./dist/'));
     gulp.src('app/style/app.css')
         .pipe(gulp.dest('./dist/style/'));
+    gulp.src('app/src/vendors/**')
+        .pipe(gulp.dest('./dist/src/vendors'));
+    gulp.src('app/assets/**')
+        .pipe(gulp.dest('./dist/assets'));
 });
 
 gulp.task('watch', function(){
